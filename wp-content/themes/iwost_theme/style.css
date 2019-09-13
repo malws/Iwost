@@ -1,0 +1,253 @@
+body {
+	background-color: black;
+    font-family: 'Stalemate', cursive;
+	color: white;
+}
+#butt {
+	position: absolute;
+	top:10px;
+	right:10px;
+}
+.overlay {
+	font-size:1.1em;
+    width: 0;
+    height: 100vh;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 1);
+    overflow-x: hidden;
+    transition: 0.5s;
+	transition-delay: 0.3s;
+	overflow:hidden;
+}
+
+.overlay-content, .overcont {
+    text-align: center;
+}
+.overlay-content {
+    margin-top: 30px;
+	position: relative;
+	top: 25%;
+}
+.overcont {
+    height: 100vh;
+	position:relative;
+	background-color: rgb(0,0,0);
+  overflow-y: auto;
+	overflow-x:hidden;
+	padding-right: 1500px;
+	margin-right:-1500px;
+}
+h1 {
+	border-bottom: 1px solid white;
+	padding:0.3em;
+}
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus{
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+	top:-10px;
+    right: 10px;
+    font-size: 60px;
+	z-index:5;
+}
+
+@media only screen and (max-width: 600px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn,  .overcont .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+	#name {
+	display:none;
+}
+}
+header {
+	height: 7vh;
+}
+footer {
+	height: 7vh;
+	text-align:center;
+	font-family: 'Poiret One', cursive;
+}
+#name {
+	font-size: 2.7em;
+	
+}
+.categories {
+	padding:0px !important;
+	height:86vh;
+	display: flex;
+	align-items:center;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	opacity:0.4;
+	-webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+.categories:hover{
+	opacity:1;
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+.categories .descriptions {
+	height:0%;
+	opacity:0;
+	transition:all 0.5s;
+}
+.categories:hover .descriptions {
+	cursor: pointer;
+	font-size:3.5em;
+	color: black;
+	background-color:rgba(255, 255, 255, 0.7);
+	display:flex;
+	align-content:center;
+	justify-content:center;
+	width:100%;
+	height:1em;
+	opacity:1;
+}
+.clicked {
+	transition:all 0.2s;
+	height:100%;
+	width:100%;
+	background-color:black;
+}
+.clicked span {
+	display:none;
+}
+
+#paintings {
+	background-image: url('images/15078915_1818168868467818_6256918441719638699_n.jpg');
+	background-position: 60%;
+}
+#drawings {
+	background-image: url('images/20160206_185119-1.jpg');
+}
+#sculptures {
+	background-image: url('images/13776041_1763857363898969_7622751131469726367_n.jpg');
+}
+#photography {
+	background-image: url('images/12342740_1671846703100036_3166341770774191783_n.jpg');
+}
+
+
+
+#quad { 
+	font-family: 'Poiret One', cursive;
+  background-color: #000; 
+}
+#quad h2 {
+	margin-bottom: 1em;
+}
+#quad .attachment-post-thumbnail { 
+  margin: 0; 
+	width: 50%;
+  height: 100%;
+	-webkit-transition: width 0.5s;
+	transition: 0.5s;
+	border:solid 1px white;
+	z-index:10;
+}
+#quad .attachment-post-thumbnail:hover { cursor: pointer; }
+
+#quad .attachment-post-thumbnail.expanded { 
+	width:100%; 
+}
+@media only screen and (max-width: 600px) {
+	#quad .attachment-post-thumbnail {width: 60%;}
+}
+@media only screen and (max-width: 600px) {
+	
+#quad .attachment-post-thumbnail.expanded {width: 85%;}
+}
+#form {
+	font-family: 'Poiret One', cursive;
+}
+#aboutcont {
+	font-family: 'Poiret One', cursive;
+}
+
+
+
+div.wpforms-container-full .wpforms-form .wpforms-field-container .wpforms-field-email input, div.wpforms-container-full .wpforms-form .wpforms-field-container .wpforms-field-name input, div.wpforms-container-full .wpforms-form .wpforms-field-container textarea {
+
+	    background-color: transparent; /* Remove background fill */
+
+	    text-transform: uppercase; /* Make text all uppercase */
+
+	    border-radius: 0; /* Remove corner curve */
+
+	    border: 2px solid #fff; /* 2px white border */
+
+	    color: #fff; /* White text */
+
+	    height: 45px; /* Increase input height */
+	}
+
+	::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+
+	    color:    #fff;
+
+	}
+
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+
+	   color:    #fff;
+
+	   opacity:  1;
+
+	}
+
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+
+	   color:    #fff;
+
+	   opacity:  1;
+
+	}
+
+	:-ms-input-placeholder { /* Internet Explorer 10-11 */
+
+	   color:    #fff;
+
+	}
+
+	::-ms-input-placeholder { /* Microsoft Edge */
+
+	   color:    #fff;
+
+	}
+
+	/* Button */
+
+	div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-container-full .wpforms-form button[type=submit], div.wpforms-container-full .wpforms-form .wpforms-page-button {
+
+	   text-transform: uppercase;
+
+	   padding: 10px 60px;
+
+	   color: white;
+
+	   background: #444;
+
+	   font-weight: normal;
+
+	}
